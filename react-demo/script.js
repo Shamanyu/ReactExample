@@ -5,6 +5,7 @@ const jsContainer = document.getElementById("js");
 jsContainer.innerHTML = `
   <div class="demo">
     Hello JS
+    <input />
   </div>
 `;
 
@@ -15,7 +16,8 @@ ReactDOM.render(
   React.createElement(
     "div",
     {className: "demo"},
-    "Hello React"
+    "Hello React",
+    React.createElement("input")
   ),
   reactContainer
 );
