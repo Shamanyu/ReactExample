@@ -1,1 +1,9 @@
-console.log("React demo")
+console.log("React demo");
+
+const jsContainer = document.getElementById("js");
+
+jsContainer.innerHTML = `
+  <div class="demo">
+    Hello JS
+  </div>
+`;
