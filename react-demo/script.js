@@ -5,6 +5,8 @@ const reactContainer = document.getElementById("react");
 
 const render = () => {
 
+  // Throws away the entire DOM and re-renders every time 'render' is called
+  // We won't be able to type in the 'input' box
   jsContainer.innerHTML = `
     <div class="demo">
       Hello JS
@@ -15,6 +17,8 @@ const render = () => {
     </div>
   `;
 
+  // Smartly updates only the changed component
+  // We will be able to type in the 'input' box
   ReactDOM.render(
     // React works with objects rather than strings
     React.createElement(
